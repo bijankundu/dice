@@ -1,9 +1,9 @@
 var diceValue1,diceValue2;
-var myVar = localStorage['.k'] || 'defaultValue';
+var myVar = sessionStorage.getItem(".k") || 'defaultValue';
 if(myVar == 'defaultValue')
 {
       document.querySelector(".container h1").textContent = "Refresh Me";
-      localStorage['.k'] = '1';
+      sessionStorage.setItem(".k", "1");
 }
 else
 {
